@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Matt Macrides | Portfolio</title>
+    <meta name="description" content="Matt Macrides — Senior Data Scientist at Progressive Insurance. Portfolio of projects, experience, and impact." />
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Optional: simple favicon -->
+    <!-- <link rel="icon" href="assets/favicon.png" /> -->
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="header">
+      <div class="container header__inner">
+        <a class="brand" href="#top" aria-label="Go to top">
+          <span class="brand__mark" aria-hidden="true"></span>
+          <span class="brand__text">Matt Macrides</span>
+        </a>
+
+        <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">
+          <span class="nav-toggle__bar"></span>
+          <span class="nav-toggle__bar"></span>
+          <span class="nav-toggle__bar"></span>
+        </button>
+
+        <nav id="site-nav" class="nav" aria-label="Primary navigation">
+          <a class="nav__link" href="#about">About</a>
+          <a class="nav__link" href="#experience">Experience</a>
+          <a class="nav__link" href="#projects">Projects</a>
+          <a class="nav__link" href="#resume">Resume</a>
+          <a class="nav__link" href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- HERO -->
+      <section id="top" class="section hero">
+        <div class="container hero__grid">
+          <div class="hero__text">
+            <p class="eyebrow">Portfolio</p>
+            <h1 class="hero__title">Matt Macrides</h1>
+            <p class="hero__subtitle">Senior Data Scientist at Progressive Insurance</p>
+            <p class="hero__blurb">
+              I build analytics and ML products that move key business metrics—through clean experimentation, scalable data
+              pipelines, and pragmatic modeling.
+            </p>
+
+            <div class="hero__cta">
+              <a class="btn btn--primary" href="#projects">View Projects</a>
+              <a class="btn btn--ghost" href="#contact">Contact</a>
+              <!-- Replace with your real LinkedIn -->
+              <a class="btn btn--soft" href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>
+            </div>
+
+            <div class="hero__meta">
+              <span class="pill">Cleveland, OH</span>
+              <span class="pill">ML • Analytics • GenAI</span>
+              <span class="pill">Python • SQL • Spark</span>
+            </div>
+          </div>
+
+          <div class="hero__card" aria-label="Profile card">
+            <div class="avatar-wrap">
+              <!-- Put your headshot here -->
+              <img class="avatar" src="assets/headshot.jpg" alt="Headshot of Matt Macrides" />
+            </div>
+            <div class="hero__card-body">
+              <h2 class="hero__card-title">Quick Links</h2>
+              <ul class="linklist">
+                <li><a href="#projects">Featured projects</a></li>
+                <li><a href="#experience">Recent experience</a></li>
+                <li><a href="#resume">Resume PDF</a></li>
+                <li><a href="#contact">Reach out</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="stats">
+            <div class="stat">
+              <div class="stat__num">X+</div>
+              <div class="stat__label">Projects shipped</div>
+            </div>
+            <div class="stat">
+              <div class="stat__num">Y%</div>
+              <div class="stat__label">Metric lift (best)</div>
+            </div>
+            <div class="stat">
+              <div class="stat__num">Z</div>
+              <div class="stat__label">Teams partnered</div>
+            </div>
+          </div>
+          <p class="note">Replace X/Y/Z with real numbers once we add your details.</p>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section id="about" class="section">
+        <div class="container">
+          <div class="section__head">
+            <h2>About</h2>
+            <p class="muted">A quick snapshot of who you are and what you do best.</p>
+          </div>
+
+          <div class="card">
+            <div class="card__content two-col">
+              <div>
+                <h3 class="card__title">What I do</h3>
+                <p>
+                  I’m a Senior Data Scientist at Progressive Insurance. I focus on building decision-ready models and
+                  analytics that teams can trust—backed by strong measurement and clear communication.
+                </p>
+                <p>
+                  My sweet spot is bridging business outcomes with technical execution: framing the problem, designing
+                  the approach, and delivering something that actually ships.
+                </p>
+              </div>
+
+              <div>
+                <h3 class="card__title">Core strengths</h3>
+                <ul class="bullets">
+                  <li>End-to-end ML & analytics delivery (discovery → launch → monitoring)</li>
+                  <li>Experimentation, causal thinking, and KPI measurement</li>
+                  <li>Data pipelines, feature engineering, and scalable evaluation</li>
+                  <li>Stakeholder communication: crisp docs, strong alignment, clean visuals</li>
+                </ul>
+
+                <div class="tagcloud" aria-label="Skills">
+                  <span class="tag">Python</span>
+                  <span class="tag">SQL</span>
+                  <span class="tag">Spark</span>
+                  <span class="tag">Pandas</span>
+                  <span class="tag">XGBoost</span>
+                  <span class="tag">A/B Testing</span>
+                  <span class="tag">GenAI</span>
+                  <span class="tag">AWS</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- EXPERIENCE -->
+      <section id="experience" class="section">
+        <div class="container">
+          <div class="section__head">
+            <h2>Experience</h2>
+            <p class="muted">High-level view. We can expand this into detailed case studies later.</p>
+          </div>
+
+          <div class="timeline">
+            <article class="timeline__item">
+              <div class="timeline__dot" aria-hidden="true"></div>
+              <div class="timeline__body card">
+                <div class="card__content">
+                  <div class="row">
+                    <h3 class="card__title">Senior Data Scientist — Progressive Insurance</h3>
+                    <span class="muted">20XX — Present</span>
+                  </div>
+                  <ul class="bullets">
+                    <li>Led analytics/ML workstream for <em>[initiative]</em>, improving <em>[metric]</em> by <em>[impact]</em>.</li>
+                    <li>Built scalable pipeline for <em>[use case]</em> using <em>[tools]</em>, enabling <em>[result]</em>.</li>
+                    <li>Partnered with product/engineering to ship <em>[feature]</em> end-to-end, including monitoring.</li>
+                  </ul>
+                </div>
+              </div>
+            </article>
+
+            <article class="timeline__item">
+              <div class="timeline__dot" aria-hidden="true"></div>
+              <div class="timeline__body card">
+                <div class="card__content">
+                  <div class="row">
+                    <h3 class="card__title">Previous Role — Company</h3>
+                    <span class="muted">20XX — 20XX</span>
+                  </div>
+                  <ul class="bullets">
+                    <li>Impact bullet goes here.</li>
+                    <li>Impact bullet goes here.</li>
+                    <li>Impact bullet goes here.</li>
+                  </ul>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJECTS -->
+      <section id="projects" class="section">
+        <div class="container">
+          <div class="section__head">
+            <h2>Projects</h2>
+            <p class="muted">Featured work. Each card can link to GitHub, a demo, or a case study section.</p>
+          </div>
+
+          <div class="filters" aria-label="Project filters">
+            <button class="chip is-active" data-filter="all">All</button>
+            <button class="chip" data-filter="ml">ML</button>
+            <button class="chip" data-filter="analytics">Analytics</button>
+            <button class="chip" data-filter="genai">GenAI</button>
+            <button class="chip" data-filter="viz">Visualization</button>
+          </div>
+
+          <div class="grid" id="project-grid">
+            <!-- Project Card 1 -->
+            <article class="project card" data-tags="ml,analytics">
+              <div class="card__content">
+                <div class="project__top">
+                  <h3 class="card__title">Project Title One</h3>
+                  <span class="badge">ML</span>
+                </div>
+                <p class="muted">
+                  One-liner: what this is, who it’s for, and why it matters. Keep it concrete.
+                </p>
+                <ul class="bullets bullets--tight">
+                  <li><strong>Outcome:</strong> e.g., +3.2% conversion / -12% handle time</li>
+                  <li><strong>Tech:</strong> Python, SQL, Spark, XGBoost</li>
+                  <li><strong>Role:</strong> lead / IC / collaborator</li>
+                </ul>
+                <div class="project__links">
+                  <a class="link" href="#" target="_blank" rel="noreferrer">GitHub</a>
+                  <a class="link" href="#" target="_blank" rel="noreferrer">Demo</a>
+                  <a class="link" href="#" target="_blank" rel="noreferrer">Case Study</a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project Card 2 -->
+            <article class="project card" data-tags="genai">
+              <div class="card__content">
+                <div class="project__top">
+                  <h3 class="card__title">Project Title Two</h3>
+                  <span class="badge badge--alt">GenAI</span>
+                </div>
+                <p class="muted">One-liner: what it does, where it fits, and the measurable value.</p>
+                <ul class="bullets bullets--tight">
+                  <li><strong>Outcome:</strong> e.g., reduced time-to-answer by 40%</li>
+                  <li><strong>Tech:</strong> RAG, embeddings, evaluation, prompt tooling</li>
+                  <li><strong>Role:</strong> design + implementation</li>
+                </ul>
+                <div class="project__links">
+                  <a class="link" href="#" target="_blank" rel="noreferrer">GitHub</a>
+                  <a class="link" href="#" target="_blank" rel="noreferrer">Case Study</a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project Card 3 -->
+            <article class="project card" data-tags="viz,analytics">
+              <div class="card__content">
+                <div class="project__top">
+                  <h3 class="card__title">Project Title Three</h3>
+                  <span class="badge badge--soft">Viz</span>
+                </div>
+                <p class="muted">One-liner: interactive visualization / dashboard / storytelling.</p>
+                <ul class="bullets bullets--tight">
+                  <li><strong>Outcome:</strong> e.g., enabled stakeholders to self-serve insights</li>
+                  <li><strong>Tech:</strong> D3, Plotly, Streamlit (or whatever)</li>
+                </ul>
+                <div class="project__links">
+                  <a class="link" href="#" target="_blank" rel="noreferrer">GitHub</a>
+                  <a class="link" href="#" target="_blank" rel="noreferrer">Live Site</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- RESUME -->
+      <section id="resume" class="section">
+        <div class="container">
+          <div class="section__head">
+            <h2>Resume</h2>
+            <p class="muted">Keep a PDF here for quick downloads.</p>
+          </div>
+
+          <div class="card">
+            <div class="card__content resume">
+              <div>
+                <h3 class="card__title">Download PDF</h3>
+                <p class="muted">Drop your resume file in the repo root as <code>resume.pdf</code>.</p>
+              </div>
+              <div class="resume__actions">
+                <a class="btn btn--primary" href="resume.pdf" target="_blank" rel="noreferrer">Open Resume</a>
+                <a class="btn btn--ghost" href="resume.pdf" download>Download</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact" class="section">
+        <div class="container">
+          <div class="section__head">
+            <h2>Contact</h2>
+            <p class="muted">The easiest ways to reach you.</p>
+          </div>
+
+          <div class="card">
+            <div class="card__content contact">
+              <div>
+                <h3 class="card__title">Let’s connect</h3>
+                <p>
+                  Email is best. I’m happy to chat about data science, analytics strategy, ML systems, and GenAI product
+                  work.
+                </p>
+                <div class="contact__buttons">
+                  <!-- Replace email -->
+                  <a class="btn btn--primary" href="mailto:youremail@example.com">Email me</a>
+                  <!-- Replace LinkedIn -->
+                  <a class="btn btn--soft" href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>
+                  <!-- Replace GitHub -->
+                  <a class="btn btn--ghost" href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
+                </div>
+              </div>
+
+              <div class="contact__box" aria-label="Contact details">
+                <div class="kv">
+                  <span class="muted">Location</span>
+                  <span>Cleveland, OH</span>
+                </div>
+                <div class="kv">
+                  <span class="muted">Primary</span>
+                  <span>Email</span>
+                </div>
+                <div class="kv">
+                  <span class="muted">Focus</span>
+                  <span>Portfolio / Projects</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <footer class="footer">
+            <p class="muted">© <span id="year"></span> Matt Macrides. Built with plain HTML/CSS/JS.</p>
+          </footer>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
