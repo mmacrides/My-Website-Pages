@@ -216,7 +216,7 @@ code {
 
 .hero__subtitle {
   margin: 12px 0 10px;
-  font-size: 18px;
+  font-size: 20px;
   color: rgba(255,255,255,0.82);
 }
 
@@ -226,7 +226,7 @@ code {
   max-width: 58ch;
 }
 
-.hero__cta { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 16px; }
+.hero__cta { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 14px; }
 .hero__meta { display: flex; flex-wrap: wrap; gap: 10px; }
 
 .pill {
