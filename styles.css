@@ -49,7 +49,7 @@ code {
   margin: 0 auto;
 }
 
-.section { padding: 84px 0; }
+.section { padding: 60px 0; }
 .section__head { margin-bottom: 18px; }
 .section__head h2 { margin: 0; font-size: 30px; letter-spacing: -0.02em; }
 .muted { color: var(--muted); }
