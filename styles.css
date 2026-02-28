@@ -78,9 +78,16 @@ code {
   width: min(var(--container), calc(100% - 40px));
   margin: 0 auto;
 }
-.about p {
-  margin-bottom: 16px;
+.two-col > div:first-child {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
 }
+
+.two-col > div:first-child p {
+  margin: 0;
+}
+
 .section { padding: 26px 0; }
 .section__head { margin-bottom: 18px; }
 .section__head h2 {
