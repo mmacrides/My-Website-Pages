@@ -78,6 +78,7 @@ code {
   width: min(var(--container), calc(100% - 40px));
   margin: 0 auto;
 }
+
 .two-col > div:first-child {
   display: flex;
   flex-direction: column;
@@ -85,6 +86,16 @@ code {
 }
 
 .two-col > div:first-child p {
+  margin: 0;
+}
+
+/* ✅ NEW: same “stacked paragraphs” behavior, but for the new About layout */
+.two-col-cards > .card:first-child .card__content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.two-col-cards > .card:first-child .card__content p {
   margin: 0;
 }
 
@@ -319,6 +330,13 @@ code {
   gap: 18px;
 }
 
+/* ✅ NEW: About section split into two cards side-by-side */
+.two-col-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
 .bullets { margin: 0; padding-left: 18px; color: rgba(255,255,255,0.82); }
 .bullets li { margin: 10px 0; }
 .bullets--tight li { margin: 8px 0; }
@@ -496,6 +514,7 @@ code {
 @media (max-width: 980px) {
   .hero__grid { grid-template-columns: 1fr; }
   .two-col { grid-template-columns: 1fr; }
+  .two-col-cards { grid-template-columns: 1fr; } /* ✅ NEW */
   .grid { grid-template-columns: 1fr; }
   .contact { grid-template-columns: 1fr; }
   .resume { flex-direction: column; align-items: flex-start; }
