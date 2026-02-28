@@ -78,7 +78,9 @@ code {
   width: min(var(--container), calc(100% - 40px));
   margin: 0 auto;
 }
-
+.about p {
+  margin-bottom: 16px;
+}
 .section { padding: 26px 0; }
 .section__head { margin-bottom: 18px; }
 .section__head h2 {
