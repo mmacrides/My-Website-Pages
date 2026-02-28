@@ -81,7 +81,7 @@ code {
 .two-col > div:first-child {
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  gap: 24px;
 }
 
 .two-col > div:first-child p {
