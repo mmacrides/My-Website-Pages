@@ -123,6 +123,38 @@ code {
 }
 .skip-link:focus { left: 12px; z-index: 9999; }
 
+.skills {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.skills li {
+  display: grid;
+  grid-template-columns: 90px 1fr;
+  gap: 12px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.skills li:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.skill-name {
+  font-weight: 700;
+  color: rgba(255,255,255,0.95);
+}
+
+.skill-desc {
+  color: var(--muted);
+  line-height: 1.5;
+}
+
 /* =========================
    Header
    ========================= */
