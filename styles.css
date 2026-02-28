@@ -153,6 +153,7 @@ code {
 .skill-desc {
   color: var(--muted);
   line-height: 1.5;
+  padding-top: 2px;
 }
 
 /* =========================
