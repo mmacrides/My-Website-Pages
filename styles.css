@@ -99,7 +99,7 @@ code {
   margin: 0;
 }
 
-.section { padding: 26px 0; }
+.section { padding: 20px 0; }
 .section__head { margin-bottom: 18px; }
 .section__head h2 {
   margin: 0;
@@ -108,7 +108,7 @@ code {
   line-height: 1.15;
 }
 .muted { color: var(--muted); }
-.note { margin: 12px 0 0; color: var(--muted); font-size: 14px; }
+.note { margin: 12px 0 0; color: var(--muted); font-size: 18px; }
 
 /* Skip link */
 .skip-link {
@@ -153,7 +153,7 @@ code {
 .skill-desc {
   color: var(--muted);
   line-height: 1.5;
-  padding-top: 2px;
+  padding-left: 15px;
 }
 
 /* =========================
@@ -265,11 +265,19 @@ code {
   font-size: 54px;
   letter-spacing: -0.05em;
   line-height: 1.02;
+  padding-top: 25px;
 }
 
 .hero__subtitle {
-  margin: 12px 0 10px;
+  margin: 4px 0px;
   font-size: 22px;
+  color: rgba(255,255,255,0.82);
+  padding-bottom: 20px;
+}
+
+.hero__subtitle2 {
+  margin: 0 0 10px;
+  font-size: 16px;
   color: rgba(255,255,255,0.82);
 }
 
@@ -304,6 +312,14 @@ code {
   overflow: hidden;
 }
 
+/* Hero Card - Fully Transparent */
+.hero__card {
+  border: none; /* Remove the border */
+  background: transparent; /* Make the background transparent */
+  box-shadow: none; /* Remove the shadow */
+  overflow: hidden; /* Keep overflow hidden if needed */
+}
+
 .avatar-wrap {
   padding: 18px;
   display: grid;
@@ -313,8 +329,8 @@ code {
 }
 
 .avatar {
-  width: 160px;
-  height: 160px;
+  width: 200px;
+  height: 200px;
   border-radius: 999px;
   object-fit: cover;
   border: 1px solid rgba(255,255,255,0.14);
@@ -350,8 +366,10 @@ code {
 
 .card__content { padding: 18px; }
 
+.buttons { padding: 10px; }
+
 .card__title {
-  margin: 0 0 10px;
+  margin: 0 0px;
   font-size: 18px;
   letter-spacing: -0.03em;
   line-height: 1.2;
@@ -363,6 +381,10 @@ code {
   gap: 18px;
 }
 
+.technical-skills {
+  padding-bottom: 10px;
+}
+
 /* ✅ NEW: About section split into two cards side-by-side */
 .two-col-cards {
   display: grid;
@@ -370,7 +392,7 @@ code {
   gap: 18px;
 }
 
-.bullets { margin: 0; padding-left: 18px; color: rgba(255,255,255,0.82); }
+.bullets { margin: 0; padding-top:10px;padding-left: 18px; color: rgba(255,255,255,0.82); }
 .bullets li { margin: 10px 0; }
 .bullets--tight li { margin: 8px 0; }
 
@@ -474,9 +496,9 @@ code {
   align-items: center;
   justify-content: center;
   gap: 8px;
-  padding: 11px 14px;
+  padding: 5px 14px;
   border-radius: 14px;
-  border: 1px solid rgba(255,255,255,0.12);
+  border: 8px solid rgba(255, 255, 255, 0.12);
   background: rgba(255,255,255,0.05);
   color: rgba(255,255,255,0.93);
   font-weight: 650;
@@ -499,6 +521,7 @@ code {
 .btn--soft {
   border-color: rgba(255,255,255,0.12);
   background: rgba(255,255,255,0.06);
+  width: 25%;
 }
 
 /* =========================
@@ -575,4 +598,568 @@ code {
   .nav.is-open { display: flex; }
 
   .hero__title { font-size: 42px; }
+}
+
+/* =========================
+   Skill Line (Between About & Experience)
+   ========================= */
+
+.skillline {
+  overflow: visible;
+}
+
+.skillline__track {
+  position: relative;
+  display: flex;
+  justify-content: center; /* Center all items */
+  gap: 120px; /* Increase spacing between items */
+  align-items: start;
+}
+
+.skillnode__img[src*="langchain_white.png"] {
+  width: 110px; /* Maintain the increased size */
+  height: auto; /* Maintain aspect ratio */
+  align-self: center; /* Center align with other buttons */
+}
+
+/* clickable node */
+.skillnode {
+  position: relative;
+  display: grid;
+  place-items: center;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  outline: none;
+  z-index: 1;
+  align-self: center;
+}
+
+.skillnode__img.aws {
+  padding: 10px; /* Add spacing around the AWS button */
+  width: 130px; /* Adjust width to make it less tight */
+  height: 90px; /* Maintain aspect ratio */
+}
+
+.skillnode__img[src*="sql.png"] {
+  width: 70px; /* Increase the size of the SQL widget */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.skillnode__img[src*="git.png"] {
+  width: 70px; /* Increase the size of the SQL widget */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.skillnode__img[src*="python.png"] {
+  width: 70px; /* Increase the size of the SQL widget */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* placeholder "image" tile */
+.skillnode__img {
+  width: 74px;
+  height: 74px;
+  border-radius: 18px;
+  display: grid;
+  place-items: center;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  font-size: 12px;
+  color: rgba(255,255,255,0.92);
+
+  border: 1px solid rgba(255,255,255,0.12);
+  background:
+    radial-gradient(120px 60px at 30% 20%, rgba(108, 182, 255, 0.16), transparent 60%),
+    radial-gradient(120px 60px at 80% 30%, rgba(183, 156, 255, 0.14), transparent 60%),
+    rgba(255,255,255,0.04);
+  box-shadow: var(--shadow-soft);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  transition:
+    transform var(--dur) var(--ease),
+    border-color var(--dur) var(--ease),
+    background var(--dur) var(--ease);
+}
+
+.skillnode:hover .skillnode__img,
+.skillnode:focus-visible .skillnode__img {
+  transform: translateY(-2px);
+  border-color: rgba(255,255,255,0.20);
+  background:
+    radial-gradient(140px 70px at 30% 20%, rgba(108, 182, 255, 0.20), transparent 60%),
+    radial-gradient(140px 70px at 80% 30%, rgba(183, 156, 255, 0.18), transparent 60%),
+    rgba(255,255,255,0.055);
+}
+
+.skillnode:hover .skillnode__dot,
+.skillnode:focus-visible .skillnode__dot {
+  box-shadow:
+    0 0 0 8px rgba(255,255,255,0.03),
+    0 14px 30px rgba(0,0,0,0.45);
+}
+
+/* tooltip */
+.skillnode::after {
+  content: attr(data-tip);
+  position: absolute;
+  left: 50%;
+  bottom: 112px; /* lift a little higher */
+  transform: translateX(-50%) translateY(6px);
+
+  width: min(520px, 92vw);     /* wider */
+  padding: 22px 26px;          /* more breathing room */
+  border-radius: 20px;
+
+  color: rgba(255,255,255,0.96);
+  background: rgba(7, 10, 20, 0.96);
+  border: 1px solid rgba(255,255,255,0.16);
+  box-shadow: 0 28px 70px rgba(0,0,0,0.6);
+
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+
+  opacity: 0;
+  pointer-events: none;
+  transition:
+    opacity var(--dur) var(--ease),
+    transform var(--dur) var(--ease);
+
+  font-size: 18px;           /* 👈 noticeable but still elegant */
+  line-height: 1.6;          /* 👈 very readable */
+  text-align: left;
+}
+
+/* tiny tooltip arrow */
+.skillnode::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 98px;
+  width: 14px;
+  height: 14px;
+  background: rgba(7, 10, 20, 0.96);
+  border-right: 1px solid rgba(255,255,255,0.16);
+  border-bottom: 1px solid rgba(255,255,255,0.16);
+  transform: translateX(-50%) rotate(45deg);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity var(--dur) var(--ease), transform var(--dur) var(--ease);
+}
+
+.skillnode:hover::after,
+.skillnode:focus-visible::after,
+.skillnode:hover::before,
+.skillnode:focus-visible::before {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+/* =========================
+   Skill icons — transparent container
+   ========================= */
+
+.skillnode {
+  background: transparent;      /* remove visible tile */
+  border: none;                 /* remove outline */
+  box-shadow: none;             /* remove depth */
+  padding: 0;                   /* icon defines the size */
+  border-radius: 0;             /* no rounded tile */
+}
+
+/* Prevent hover from reintroducing a box */
+.skillnode:hover,
+.skillnode:focus-visible {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+}
+
+/* Make the icon tile fully transparent (no border, no background) */
+.skillnode__img {
+  border: none !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+}
+
+/* =========================
+   About: full-width when only one card remains
+   ========================= */
+.two-col-cards {
+  grid-template-columns: 1fr;
+}
+
+.academic-date {
+  font-size: 16px;
+  color: var(--muted);
+  margin-top: 4px;
+}
+
+/* Popup styles */
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.9);
+  z-index: 1000;
+  background: linear-gradient(135deg, #ffffff, #f0f0f0);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+  border-radius: 12px;
+  padding: 24px;
+  max-width: 90%;
+  width: 450px;
+  animation: popup-show 0.3s ease-out forwards;
+}
+
+@keyframes popup-show {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+.popup__content {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #333;
+  text-align: center;
+}
+
+.popup__close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: #666;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.popup__close:hover {
+  color: #000;
+}
+
+/* Add a subtle backdrop */
+.popup-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  animation: backdrop-fade-in 0.3s ease-out;
+}
+
+@keyframes backdrop-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Style for the popup image */
+.popup__image {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.popup__image img {
+  max-width: 80px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Center align popup content */
+.popup__content {
+  text-align: center;
+}
+
+/* Ensure the image and text are visually centered */
+.popup__image {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 16px;
+  margin-top: 16px;
+}
+
+.skillnode.academic::after {
+  width: min(180px, 92vw); /* This sets the hover box width for academic icons */
+  text-align: center;
+  font-size: 15px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.expand-arrow {
+  background: none;
+  border: none;
+  font-size: 1.5em;
+  color: #fff;
+  cursor: pointer;
+  transition: color 0.2s;
+  padding: 0 8px;
+  margin-left: 12px;
+}
+.expand-arrow:hover {
+  color: #ffd;
+}
+
+.exp-header {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.exp-title {
+  font-size: 1.15em;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: -0.01em;
+}
+
+.exp-dates {
+  font-size: 0.98em;
+  color: #bbb;
+  font-weight: 400;
+  margin-top: 2px;
+}
+
+.skillnode.skillz {
+  pointer-events: none; /* Disable clicking */
+}
+
+.expand {
+  padding-bottom: 20px;
+}
+
+.exp-header{
+  display:flex;
+  flex-direction: row;
+  align-items: center;   /* center vertically */
+  gap: 20px;
+}
+
+.company-logo{
+  width: 160px;           /* slightly bigger */
+  height: 60px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.exp-header-text {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Projects: horizontal scroll with 3 visible cards */
+#project-grid {
+  display: flex;
+  gap: 14px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding-bottom: 12px;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+}
+
+#project-grid .project {
+  flex: 0 0 calc((100% - 28px) / 3); /* 3 cards visible */
+  min-width: calc((100% - 28px) / 3);
+  scroll-snap-align: start;
+}
+#project-grid::-webkit-scrollbar {
+  height: 10px;
+}
+
+#project-grid::-webkit-scrollbar-track {
+  background: rgba(255,255,255,0.04);
+  border-radius: 999px;
+}
+
+#project-grid::-webkit-scrollbar-thumb {
+  background: rgba(255,255,255,0.22);
+  border-radius: 999px;
+}
+
+#project-grid::-webkit-scrollbar-thumb:hover {
+  background: rgba(255,255,255,0.32);
+}
+
+#project-grid {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255,255,255,0.28) transparent;
+}
+
+.earlier-exp {
+  width: 100%;
+}
+
+.earlier-exp__summary {
+  cursor: pointer;
+  list-style: none;
+  font-size: 1.15em;
+  font-weight: 700;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.earlier-exp__summary::-webkit-details-marker {
+  display: none;
+}
+
+.earlier-exp__summary::before {
+  content: "▸";
+  font-size: 1.5em;
+  color: #bbb;
+  transition: transform 0.2s ease;
+}
+
+.earlier-exp[open] .earlier-exp__summary::before {
+  transform: rotate(90deg);
+}
+
+.earlier-exp__list {
+  margin-top: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.earlier-exp__entry {
+  padding-top: 20px;
+  border-top: 1px solid rgba(255,255,255,0.08);
+}
+
+.earlier-exp__entry:first-child {
+  border-top: none;
+  padding-top: 0;
+}
+
+.earlier-exp__content {
+  padding-left: 56px;
+  margin-top: 10px;
+}
+.project-flip {
+  perspective: 1200px;
+  -webkit-perspective: 1200px;
+  min-height: 240px;
+  cursor: pointer;
+}
+
+.project-flip__inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 240px;
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  transition: transform 0.65s ease;
+  will-change: transform;
+}
+
+.project-flip.is-flipped .project-flip__inner {
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+}
+
+.project-flip__face {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  border-radius: inherit;
+  overflow: hidden;
+}
+
+/* explicitly define both faces */
+.project-flip__face--front {
+  transform: rotateY(0deg);
+  -webkit-transform: rotateY(0deg);
+}
+
+.project-flip__face--back {
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+}
+
+.project-flip .card {
+  height: 100%;
+  position: relative;
+}
+
+.project-flip .card__content {
+  height: 100%;
+  position: relative;
+}
+
+/* FRONT SIDE */
+.project-flip__front-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.project-flip__front-title {
+  margin: 0;
+  max-width: 80%;
+}
+
+/* badge in top right on front */
+.project-flip__front-content .badge {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+/* BACK SIDE */
+.project__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+/* important for Safari weirdness */
+.project-flip__face--front,
+.project-flip__face--back,
+.project-flip__inner {
+  transform-origin: center center;
+}
+
+/* prevent face hover/pointer weirdness during flip */
+.project-flip__face {
+  pointer-events: none;
+}
+
+@media (max-width: 768px) {
+  .project-flip,
+  .project-flip__inner {
+    min-height: 260px;
+  }
 }

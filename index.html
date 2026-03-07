@@ -26,6 +26,7 @@
           <a class="nav__link" href="#about">About</a>
           <a class="nav__link" href="#experience">Experience</a>
           <a class="nav__link" href="#projects">Projects</a>
+          <a class="nav__link" href="#academic-background">Academics</a>
           <a class="nav__link" href="#resume">Resume</a>
         </nav>
       </div>
@@ -37,27 +38,14 @@
         <div class="container hero__grid">
           <div class="hero__text">
             <h1 class="hero__title">Matt Macrides</h1>
-            <p class="hero__subtitle">Senior Data Scientist at Progressive Insurance</p>
-
+            <p class="hero__subtitle">Senior Data Scientist | Progressive Insurance | Cleveland, Ohio</p>
             <div class="hero__cta">
-              <a class="btn btn--primary" href="mailto:mattmacrides@gmail.com">Email me</a>
+              <a class="btn btn--soft" href="mailto:mattmacrides@gmail.com">Email Me</a>
               <a class="btn btn--soft" href="https://www.linkedin.com/in/matt-macrides-2ba311170/" target="_blank" rel="noreferrer">LinkedIn</a>
-              <a class="btn btn--ghost" href="https://github.com/mmacrides/Personal-Projects" target="_blank" rel="noreferrer">GitHub</a>
-            </div>
-
-            <div class="hero__meta">
-              <span class="pill">Cleveland, OH</span>
-              <span class="pill">ML • Analytics • GenAI</span>
-              <span class="pill">Python • SQL • AWS • Git</span>
+              <a class="btn btn--soft" href="https://github.com/mmacrides/Personal-Projects" target="_blank" rel="noreferrer">GitHub</a>
             </div>
           </div>
-
-          <div class="hero__card" aria-label="Profile card">
-            <div class="avatar-wrap">
-              <!-- Put your headshot here -->
-              <img class="avatar" src="assets/headshot.jpg" alt="Headshot of Matt Macrides" />
-            </div>
-          </div>
+        <img class="avatar" src="assets/headshot.jpg" alt="Headshot of Matt Macrides" />
         </div>
       </section>
 
@@ -65,17 +53,16 @@
       <section id="about" class="section">
         <div class="container">
           <div class="section__head">
-            <h2>About</h2>
+            <h2>My Approach</h2>
           </div>
 
           <div class="two-col-cards">
             <!-- LEFT: My Approach -->
             <div class="card">
               <div class="card__content">
-                <h3 class="card__title">My Approach</h3>
 
                 <p>
-                  I’m a person driven by uncovering trends and patterns that reveal themselves through thoughtful analysis. I find satisfaction in collaborating with stakeholders to turn those insights into clear, actionable decisions that create real impact.
+                  I’m a person motivated by uncovering trends and patterns that reveal themselves through thoughtful analysis. I find satisfaction in collaborating with stakeholders to turn those insights into clear, actionable decisions that create real impact.
                 </p>
 
                 <p>
@@ -87,58 +74,80 @@
                 </p>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
 
-            <!-- RIGHT: Core Skills -->
-            <div class="card">
-              <div class="card__content">
-                <h3 class="card__title">Core Skills</h3>
+      <!-- SKILL LINE (between About and Experience) -->
+      <section id="skill-line" class="section">
+        <div class="container">
+          <div class="section__head">
+            <h2>Technical Expertise</h2>
+            <p class="note">Hover a node to view details</p>
+          </div>
 
-                <ul class="skills">
-                  <li>
-                    <span class="skill-name">Python</span>
-                    <span class="skill-desc">
-                      4+ years building classification, regression, clustering, and NLP solutions across multiple libraries and frameworks.
-                    </span>
-                  </li>
+          <div class="skillline card" aria-label="Technical expertise timeline">
+            <div class="card__content buttons">
+              <div class="skillline__track" role="list">
+                <!-- 1 -->
+                <button
+                  class="skillnode"
+                  type="button"
+                  role="listitem"
+                  aria-label="4+ years building classification, regression, clustering, and NLP solutions across multiple libraries and frameworks."
+                  data-tip="4+ years building classification, regression, clustering, and NLP solutions across multiple libraries and frameworks."
+                >
+                  <img class="skillnode__img" src="assets/python.png" alt="Python" />
+                </button>
 
-                  <li>
-                    <span class="skill-name">Langchain</span>
-                    <span class="skill-desc">
-                      2+ years designing and deploying generative and agentic AI systems, including audit-focused bots for oversight.
-                    </span>
-                  </li>
+                <!-- 2 -->
+                <button
+                  class="skillnode"
+                  type="button"
+                  role="listitem"
+                  aria-label="2+ years designing and deploying generative and agentic AI systems, including audit-focused bots for oversight."
+                  data-tip="2+ years designing and deploying generative and agentic AI systems, including audit-focused bots for oversight."
+                >
+                  <img class="skillnode__img" src="assets/langchain_white.png" alt="Langchain" />
+                </button>
 
-                  <li>
-                    <span class="skill-name">SQL</span>
-                    <span class="skill-desc">
-                      6+ years working across Snowflake and SAS with experience spanning CTEs, window functions, database design and creation.
-                    </span>
-                  </li>
+                <!-- 3 -->
+                <button
+                  class="skillnode"
+                  type="button"
+                  role="listitem"
+                  aria-label="6+ years working across Snowflake and SAS with experience spanning CTEs, window functions, database design and creation."
+                  data-tip="6+ years working across Snowflake and SAS with experience spanning CTEs, window functions, database design and creation."
+                >
+                  <img class="skillnode__img" src="assets/sql.png" alt="Snowflake" />
+                </button>
 
-                  <li>
-                    <span class="skill-name">AWS</span>
-                    <span class="skill-desc">
-                      2+ years using EC2, ECR, SQS, S3, Athena, Lambda, CloudWatch, Batch, and others for daily work and batch pipelines.
-                    </span>
-                  </li>
+                <!-- 4 -->
+                <button
+                  class="skillnode"
+                  type="button"
+                  role="listitem"
+                  aria-label="2+ years using EC2, ECR, SQS, S3, Athena, Lambda, CloudWatch, Batch, and other AWS services for daily big data tasks and batch deployment pipelines."
+                  data-tip="2+ years using EC2, ECR, SQS, S3, Athena, Lambda, CloudWatch, Batch, and other AWS services for daily big data tasks and batch deployment pipelines."
+                >
+                  <img class="skillnode__img aws" src="assets/aws.png" alt="aws" />
+                </button>
 
-                  <li>
-                    <span class="skill-name">Git</span>
-                    <span class="skill-desc">
-                      6+ years using Git and GitHub for version control and collaboration across cross functional teams.
-                    </span>
-                  </li>
+                <!-- 5 -->
+                <button
+                  class="skillnode"
+                  type="button"
+                  role="listitem"
+                  aria-label="6+ years using Git and GitHub for version control and collaboration across cross functional teams."
+                  data-tip="6+ years using Git and GitHub for version control and collaboration across cross functional teams."
+                >
+                  <img class="skillnode__img" src="assets/git.png" alt="git" />
 
-                  <li>
-                    <span class="skill-name">Deployment</span>
-                    <span class="skill-desc">
-                      2+ years deploying batch workflows using AWS and Prefect with experience building Docker files and GitHub Actions.
-                    </span>
-                  </li>
-                </ul>
+                </button>
               </div>
             </div>
           </div>
+          <p class="note">Other tools include Power BI, Tableau, Excel, SAS, and C#</p>
         </div>
       </section>
 
@@ -148,6 +157,7 @@
           <div class="section__head">
             <h2>Experience</h2>
           </div>
+          <p class="note expand">Click the arrows to expand</p>
 
           <div class="timeline">
             <article class="timeline__item">
@@ -155,14 +165,26 @@
               <div class="timeline__body card">
                 <div class="card__content">
                   <div class="row">
-                    <h3 class="card__title">Senior Data Scientist — Progressive Insurance</h3>
-                    <span class="muted">20XX — Present</span>
+                                                                                                <div class="exp-header">
+                      <img class="company-logo" src="assets/progressive.jpg" alt="Progressive logo">
+
+                      <div class="exp-header-text">
+                        <div class="exp-title">Senior Data Scientist, CRM Data Solutions</div>
+                        <div class="exp-dates">January 2026 — Present</div>
+                      </div>
+                    </div>
+                    <button class="expand-arrow" aria-label="Expand details">&#9660;</button>
                   </div>
-                  <ul class="bullets">
-                    <li>Led analytics/ML workstream for <em>[initiative]</em>, improving <em>[metric]</em> by <em>[impact]</em>.</li>
-                    <li>Built scalable pipeline for <em>[use case]</em> using <em>[tools]</em>, enabling <em>[result]</em>.</li>
-                    <li>Partnered with product/engineering to ship <em>[feature]</em> end-to-end, including monitoring.</li>
-                  </ul>
+                  <div class="bullets" style="display:none;">
+                  <p>
+                    At the start of January 2026, I was promoted to Senior Data Scientist on the CRM Data Science team. I had to work at a senior level for several months before I was promoted, so the transition was seamless.
+                  </p>
+                  <p>
+                    Some projects that I've completed include building two batch audit bots and Power BI dashboards to monitor the effectiveness of our generative AI solutions. I am currently working on a Potential Customer Lifetime Value model to predict the propensity and expected profit of a household to bundle a particular product with us such as home, renters, and special lines. I am also in the process of automating our customer value model from SAS to Python Prefect.
+                  </p>
+                  <p>
+                    I can't wait to see what the future holds. I have had the opportunity lead a lot of exciting projects and I am looking forward for more to come.
+                  </p>
                 </div>
               </div>
             </article>
@@ -172,17 +194,198 @@
               <div class="timeline__body card">
                 <div class="card__content">
                   <div class="row">
-                    <h3 class="card__title">Previous Role — Company</h3>
-                    <span class="muted">20XX — 20XX</span>
+                                                                            <div class="exp-header">
+                      <img class="company-logo" src="assets/progressive.jpg" alt="Progressive logo">
+
+                      <div class="exp-header-text">
+                        <div class="exp-title">Data Scientist, CRM Data Solutions</div>
+                        <div class="exp-dates">February 2024 — December 2025</div>
+                      </div>
+                    </div>
+                    <button class="expand-arrow" aria-label="Expand details">&#9660;</button>
                   </div>
-                  <ul class="bullets">
-                    <li>Impact bullet goes here.</li>
-                    <li>Impact bullet goes here.</li>
-                    <li>Impact bullet goes here.</li>
-                  </ul>
+                  <div class="bullets" style="display:none;">
+                  <p>
+                    For my final rotation in the program, I was on the CRM Data Science team. This rotation was short-lived. After a month of work, I was hired on full time as a data scientist on the team. The team is responsible for building customer facing and consultant facing solutions to help optimize the customer and consultant experience, and reduce customer defection.
+                  </p>
+                  <p>
+                    In my time as an entry data scientist, I led projects at inception to modeling to deployment such as Effort Score and Loss Ratio Relativity model. I also created several generative AI and agentic AI solutions, including the chatbot summarization bot that is in production today. I also was responsible building a CRM machine learning template for the team and an LLM benchmarking template for generative AI solutions. Lastly, I was and still am the Power BI SME for the team.
+                  </p>
+                  <p>
+                    I was able to grow and develop more in these 22 months than I could have imagined. I was given a lot of responsibility and autonomy from the start which helped me grow into the role quickly.
+                  </p>
                 </div>
               </div>
             </article>
+            <article class="timeline__item">
+              <div class="timeline__dot" aria-hidden="true"></div>
+              <div class="timeline__body card">
+                <div class="card__content">
+                  <div class="row">
+                                                        <div class="exp-header">
+                      <img class="company-logo" src="assets/progressive.jpg" alt="Progressive logo">
+
+                      <div class="exp-header-text">
+                        <div class="exp-title">Rotational Analyst, Commerical Lines Business Intelligence</div>
+                        <div class="exp-dates">January 2024 — February 2024</div>
+                      </div>
+                    </div>
+                    <button class="expand-arrow" aria-label="Expand details">&#9660;</button>
+                  </div>
+                  <div class="bullets" style="display:none;">
+                  <p>
+                    In my second rotation in the Analyst Development Program, I was on the Commercial Lines Business Intelligence team. The team is responsible for creating, migrating, and maintaining data pipelines and automated solutions to optimize the commercial lines business.
+                  </p>
+                  <p>
+                    Some work I did during my time here was converted SAS files to Python Prefect that are used to generate fact and dimension tables in Snowflake, built power app and automate applications to reduce manual tasks on our team, saving around ten minutes of time each, and converted an extensive SSRS report to Power BI to improve functionality and latency.
+                  </p>
+                  <p>
+                    This rotation was a great opportunity to understand how to data pipelines are built and how deploy automated solutions. I was getting closer to the data science work that I wanted to be doing and I was excited to start my next rotation on the CRM Data Science team where I would have this opportunity.
+                  </p>
+                </div>
+                </div>
+              </div>
+            </article>
+            <article class="timeline__item">
+              <div class="timeline__dot" aria-hidden="true"></div>
+              <div class="timeline__body card">
+                <div class="card__content">
+                  <div class="row">
+                                      <div class="exp-header">
+                      <img class="company-logo" src="assets/progressive.jpg" alt="Progressive logo">
+
+                      <div class="exp-header-text">
+                        <div class="exp-title">Rotational Analyst, CRM Digital Insights</div>
+                        <div class="exp-dates">February 2023 — December 2023</div>
+                      </div>
+                    </div>
+                    <button class="expand-arrow" aria-label="Expand details">&#9660;</button>
+                  </div>
+                  <div class="bullets" style="display:none;">
+                  <p>
+                    My first full time rotation in the Analyst Development Program was on the CRM Digital Insights team. The team is responsible for analyzing customer click stream data and channel interaction data. The overall goal of my work was to analyze customer behavior and provide insights to help optimize the customer experience.
+                  </p>
+                  <p>
+                    Some notable projects that I worked on during this rotation include analyzing CRM Personas across several dimensions including demographics, behavior, loss ratio, and more, to help better understand how different segmentations of customers interact with Progressive. I also created an NLP program to help understand themes within intents of Progressive's customer facing Chatbot to understand how to better route users.
+                  <p>
+                    My first rotation went really well and I was able to strengthen my skills in SAS, Snowflake, Tableau, Power BI, and R. Despite spending most of my days querying and building visualizations, I waned to challenge myself technically. I decided at this point that I wanted to become a data scientist.
+                  </p>
+                </div>
+                </div>
+              </div>
+            </article>
+            <article class="timeline__item">
+              <div class="timeline__dot" aria-hidden="true"></div>
+              <div class="timeline__body card">
+                <div class="card__content">
+                  <div class="row">
+                    <div class="exp-header">
+                      <img class="company-logo" src="assets/progressive.jpg" alt="Progressive logo">
+
+                      <div class="exp-header-text">
+                        <div class="exp-title">ADP Intern, Claims Business Intelligence</div>
+                        <div class="exp-dates">May 2022 — August 2022</div>
+                      </div>
+                    </div>
+                    <button class="expand-arrow" aria-label="Expand details">&#9660;</button>
+                  </div>
+                  <div class="bullets" style="display:none;">
+                  <p>
+                   Progressive's Analyst Development Program caught my eye as a way to birdge my business and technical expertise together. During my summer internship, I was able to work on a variety of projects on the Claims Business Intelligence team. Despite being an 'analyst', this role was much more about building data pipelines.
+                  </p>
+                  <p>
+                   On the team, I aligned 50+ tables between dev, qa, stress, test, and prod environments that had inconsistencies in SQL Server, migrated tables to Progressive's ad hoc server using SQL, Azure DevOps pipeline, and SSIS, and built several claims triggers in SQL to warn of potential issues in the claims process. 
+                  </p>
+                  <p>
+                   I really enjoyed my internship experience at Progrssive and I was looking forward to returning in February 2023 as a full-time analyst in the ADP program.
+                  </p>
+                </div>
+                </div>
+              </div>
+            </article>
+<article class="timeline__item">
+  <div class="timeline__dot" aria-hidden="true"></div>
+  <div class="timeline__body card">
+    <div class="card__content">
+      <details class="earlier-exp">
+        <summary class="earlier-exp__summary">Earlier Experiences</summary>
+
+        <div class="earlier-exp__list">
+
+          <div class="earlier-exp__entry">
+            <div class="row">
+              <div class="exp-header">
+                <img class="company-logo" src="assets/deloitte.jpg" alt="Deloitte logo">
+                <div class="exp-header-text">
+                  <div class="exp-title">Audit & Assurance Intern</div>
+                  <div class="exp-dates">June 2021 — August 2021</div>
+                </div>
+              </div>
+              <button class="expand-arrow" aria-label="Expand details">&#9660;</button>
+            </div>
+            <div class="bullets" style="display:none;">
+              <p>
+                For the next summer I decided to make a pivot away from software engineering and towards accounting and assurance. I took an audit and assurance internship at Deloitte where I worked on several medium and large-cap clients.
+              </p>
+              <p>
+                My primary responsiibilities on the job included leading client engagement meetings and documenting client internal audit workflow and processes, preparing quarterly workpaper files in excel and ensured its adherence to most current Deloitte standards, and building analytic reports with the use of client data, the Omnia accounting platform, excel, and Power BI software.
+              </p>
+              <p>
+                My previous internships at Smucker and Patriot Software prepared me well for this role but I was still able to learn a great deal about how to naivate large organizations, manage client relationships, and work effectively on a team. Despite the good experience, I did miss the technical work and knew I wanted a more flexible and creative job than accounting provided.
+              </p>
+            </div>
+          </div>
+
+          <div class="earlier-exp__entry">
+            <div class="row">
+              <div class="exp-header">
+                <img class="company-logo" src="assets/patriot.png" alt="Patriot logo">
+                <div class="exp-header-text">
+                  <div class="exp-title">QA Software Engineer Intern</div>
+                  <div class="exp-dates">May 2020 — August 2020</div>
+                </div>
+              </div>
+              <button class="expand-arrow" aria-label="Expand details">&#9660;</button>
+            </div>
+            <div class="bullets" style="display:none;">
+              <p>
+                Desipte having a return offer to Smucker, I wanted to gain experience in a more technical role. I took a quality assurance software engineer job where I leading the unit tests on a scrum team. Our team delivered new product features for Patriot's HR product. I primarily devliered test automation through C# and Selenium, but also needed to use SQL, HTML, Git and CSS.
+              </p>
+              <p>
+                This experience was invaluable for building my software engineering skills. Working on a scrum team with daily standups, sprint planning, retrospectives, and more gave me a much deeper understanding of how software teams operate and how to be an effective collaborator on a cross functional team.
+              </p>
+            </div>
+          </div>
+
+          <div class="earlier-exp__entry">
+            <div class="row">
+              <div class="exp-header">
+                <img class="company-logo" src="assets/smuckers.jpeg" alt="Smucker logo">
+                <div class="exp-header-text">
+                  <div class="exp-title">Business Analyst Intern</div>
+                  <div class="exp-dates">May 2019 — August 2019</div>
+                </div>
+              </div>
+              <button class="expand-arrow" aria-label="Expand details">&#9660;</button>
+            </div>
+            <div class="bullets" style="display:none;">
+              <p>
+                My first corporate experience began after my freshman year of college at the J.M. Smucker Company. While the role was less technical than my current work, I learned a great deal about how large companies operate and how to facilitate the needs of several stakeholders.
+              </p>
+              <p>
+                I had the opportunity to work on a variety of projects including the test lead for Smucker's new internet and intranet sites, project lead to enhance Legal's Document Management System, created Oracle Express Applications for data reporting and analysis, and the point of contact for fixing hardware and software issues at Smucker's affiliated organizations.
+              </p>
+              <p>
+                Data Science and Machine Learning are interests of mine that extend well beyond my day to day work. I feel fortunate to have built a career around work that I genuinely enjoy and care about.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </details>
+    </div>
+  </div>
+</article>
           </div>
         </div>
       </section>
@@ -193,6 +396,8 @@
           <div class="section__head">
             <h2>Projects</h2>
           </div>
+          <p class="note">Scroll to see all Model Cards</p>
+
 
           <div class="filters" aria-label="Project filters">
             <button class="chip is-active" data-filter="all">All</button>
@@ -207,8 +412,8 @@
             <article class="project card" data-tags="ml,analytics">
               <div class="card__content">
                 <div class="project__top">
-                  <h3 class="card__title">Project Title One</h3>
-                  <span class="badge">ML</span>
+                  <h3 class="card__title">Effort Score</h3>
+                  <span class="badge">Analytics</span>
                 </div>
                 <p class="muted">
                   One-liner: what this is, who it’s for, and why it matters. Keep it concrete.
@@ -218,11 +423,6 @@
                   <li><strong>Tech:</strong> Python, SQL, Spark, XGBoost</li>
                   <li><strong>Role:</strong> lead / IC / collaborator</li>
                 </ul>
-                <div class="project__links">
-                  <a class="link" href="#" target="_blank" rel="noreferrer">GitHub</a>
-                  <a class="link" href="#" target="_blank" rel="noreferrer">Demo</a>
-                  <a class="link" href="#" target="_blank" rel="noreferrer">Case Study</a>
-                </div>
               </div>
             </article>
 
@@ -230,7 +430,7 @@
             <article class="project card" data-tags="genai">
               <div class="card__content">
                 <div class="project__top">
-                  <h3 class="card__title">Project Title Two</h3>
+                  <h3 class="card__title">Bundle Propensity Model</h3>
                   <span class="badge badge--alt">GenAI</span>
                 </div>
                 <p class="muted">One-liner: what it does, where it fits, and the measurable value.</p>
@@ -239,10 +439,20 @@
                   <li><strong>Tech:</strong> RAG, embeddings, evaluation, prompt tooling</li>
                   <li><strong>Role:</strong> design + implementation</li>
                 </ul>
-                <div class="project__links">
-                  <a class="link" href="#" target="_blank" rel="noreferrer">GitHub</a>
-                  <a class="link" href="#" target="_blank" rel="noreferrer">Case Study</a>
+              </div>
+            </article>
+              <article class="project card" data-tags="genai">
+              <div class="card__content">
+                <div class="project__top">
+                  <h3 class="card__title">Bundle Expected Profit Model</h3>
+                  <span class="badge badge--alt">GenAI</span>
                 </div>
+                <p class="muted">One-liner: what it does, where it fits, and the measurable value.</p>
+                <ul class="bullets bullets--tight">
+                  <li><strong>Outcome:</strong> e.g., reduced time-to-answer by 40%</li>
+                  <li><strong>Tech:</strong> RAG, embeddings, evaluation, prompt tooling</li>
+                  <li><strong>Role:</strong> design + implementation</li>
+                </ul>
               </div>
             </article>
 
@@ -250,7 +460,7 @@
             <article class="project card" data-tags="viz,analytics">
               <div class="card__content">
                 <div class="project__top">
-                  <h3 class="card__title">Project Title Three</h3>
+                  <h3 class="card__title">Loss Ratio Relativity Model</h3>
                   <span class="badge badge--soft">Viz</span>
                 </div>
                 <p class="muted">One-liner: interactive visualization / dashboard / storytelling.</p>
@@ -258,12 +468,128 @@
                   <li><strong>Outcome:</strong> e.g., enabled stakeholders to self-serve insights</li>
                   <li><strong>Tech:</strong> D3, Plotly, Streamlit (or whatever)</li>
                 </ul>
-                <div class="project__links">
-                  <a class="link" href="#" target="_blank" rel="noreferrer">GitHub</a>
-                  <a class="link" href="#" target="_blank" rel="noreferrer">Live Site</a>
-                </div>
               </div>
             </article>
+            <article class="project card" data-tags="viz,analytics">
+              <div class="card__content">
+                <div class="project__top">
+                  <h3 class="card__title">Summarization Bot</h3>
+                  <span class="badge badge--soft">Viz</span>
+                </div>
+                <p class="muted">One-liner: interactive visualization / dashboard / storytelling.</p>
+                <ul class="bullets bullets--tight">
+                  <li><strong>Outcome:</strong> e.g., enabled stakeholders to self-serve insights</li>
+                  <li><strong>Tech:</strong> D3, Plotly, Streamlit (or whatever)</li>
+                </ul>
+              </div>
+            </article>
+            <article class="project card" data-tags="viz,analytics">
+              <div class="card__content">
+                <div class="project__top">
+                  <h3 class="card__title">Summarization Audit Bot</h3>
+                  <span class="badge badge--soft">Viz</span>
+                </div>
+                <p class="muted">One-liner: interactive visualization / dashboard / storytelling.</p>
+                <ul class="bullets bullets--tight">
+                  <li><strong>Outcome:</strong> e.g., enabled stakeholders to self-serve insights</li>
+                  <li><strong>Tech:</strong> D3, Plotly, Streamlit (or whatever)</li>
+                </ul>
+              </div>
+            </article>
+              <article class="project card" data-tags="viz,analytics">
+              <div class="card__content">
+                <div class="project__top">
+                  <h3 class="card__title">Machine Learning Template</h3>
+                  <span class="badge badge--soft">Viz</span>
+                </div>
+                <p class="muted">One-liner: interactive visualization / dashboard / storytelling.</p>
+                <ul class="bullets bullets--tight">
+                  <li><strong>Outcome:</strong> e.g., enabled stakeholders to self-serve insights</li>
+                  <li><strong>Tech:</strong> D3, Plotly, Streamlit (or whatever)</li>
+                </ul>
+              </div>
+            </article>
+              <article class="project card" data-tags="viz,analytics">
+              <div class="card__content">
+                <div class="project__top">
+                  <h3 class="card__title">Customer Value Model</h3>
+                  <span class="badge badge--soft">Viz</span>
+                </div>
+                <p class="muted">One-liner: interactive visualization / dashboard / storytelling.</p>
+                <ul class="bullets bullets--tight">
+                  <li><strong>Outcome:</strong> e.g., enabled stakeholders to self-serve insights</li>
+                  <li><strong>Tech:</strong> D3, Plotly, Streamlit (or whatever)</li>
+                </ul>
+              </div>
+            </article>
+            <article class="project card" data-tags="viz,analytics">
+              <div class="card__content">
+                <div class="project__top">
+                  <h3 class="card__title">Model Monitoring Dashboards</h3>
+                  <span class="badge badge--soft">Viz</span>
+                </div>
+                <p class="muted">One-liner: interactive visualization / dashboard / storytelling.</p>
+                <ul class="bullets bullets--tight">
+                  <li><strong>Outcome:</strong> e.g., enabled stakeholders to self-serve insights</li>
+                  <li><strong>Tech:</strong> D3, Plotly, Streamlit (or whatever)</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ACADEMIC BACKGROUND -->
+      <section id="academic-background" class="section">
+        <div class="container">
+          <div class="section__head">
+            <h2>Academic Background</h2>
+            <p class="note">Click a node to view details</p>
+          </div>
+
+          <div class="skillline card" aria-label="Academic background timeline">
+            <div class="card__content">
+              <div class="skillline__track" role="list">
+                <!-- High School -->
+                <button
+                  class="skillnode academic"
+                  type="button"
+                  role="listitem"
+                  aria-label="Click to view details"
+                  data-tip="Click to view details"
+                >
+                  <img class="skillnode__img" src="assets/jackson.jpeg" alt="High School" />
+                  <span class="academic-date">Jackson High School</span>
+                  <span class="academic-date">2014-2018</span>
+                </button>
+
+                <!-- Bachelors -->
+                <button
+                  class="skillnode academic"
+                  type="button"
+                  role="listitem"
+                  aria-label="Click to view details"
+                  data-tip="Click to view details"
+                >
+                  <img class="skillnode__img" src="assets/osu.png" alt="Bachelors" />
+                  <span class="academic-date">Ohio State University</span>
+                  <span class="academic-date">2018-2022</span>
+                </button>
+
+                <!-- Masters -->
+                <button
+                  class="skillnode academic"
+                  type="button"
+                  role="listitem"
+                  aria-label="Click to view details"
+                  data-tip="Click to view details"
+                >
+                  <img class="skillnode__img" src="assets/uiuc.png" alt="Masters" />
+                  <span class="academic-date">University of Illinois</span>
+                  <span class="academic-date">2023-2026</span>
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </section>
