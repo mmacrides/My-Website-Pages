@@ -154,7 +154,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 /* =========================
-   Mobile tap support for Technical Expertise
+   Mobile tap support for Technical Expertis
    ========================= */
 (function () {
   const isPhone = window.matchMedia("(max-width: 720px)").matches;
