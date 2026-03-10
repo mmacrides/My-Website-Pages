@@ -153,6 +153,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
 });
 
+// Change hover text to tap on touch devices
+if ('ontouchstart' in window || navigator.maxTouchPoints > 0) {
+  document.querySelectorAll('.hover-text').forEach(el => {
+    el.textContent = "Tap a node to view details";
+  });
+}
+
 /* =========================
    Mobile tap support for Technical Expertis
    ========================= */
