@@ -152,3 +152,56 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
 });
+
+/* =========================
+   Mobile tap support for Technical Expertise
+   ========================= */
+(function () {
+  const isPhone = window.matchMedia("(max-width: 720px)").matches;
+  if (!isPhone) return;
+
+  const techSection = document.querySelector("#skill-line");
+  if (!techSection) return;
+
+  const techNodes = techSection.querySelectorAll(".skillnode");
+
+  techNodes.forEach((node) => {
+    node.addEventListener("click", function () {
+      const tip = this.getAttribute("data-tip");
+      const img = this.querySelector("img");
+      const imgSrc = img ? img.getAttribute("src") : "";
+      const imgAlt = img ? img.getAttribute("alt") : "Skill";
+
+      if (!tip) return;
+
+      const oldPopup = document.querySelector(".popup");
+      const oldBackdrop = document.querySelector(".popup-backdrop");
+      if (oldPopup) oldPopup.remove();
+      if (oldBackdrop) oldBackdrop.remove();
+
+      const backdrop = document.createElement("div");
+      backdrop.className = "popup-backdrop";
+
+      const popup = document.createElement("div");
+      popup.className = "popup";
+      popup.innerHTML = `
+        <button class="popup__close" aria-label="Close popup">&times;</button>
+        <div class="popup__image">
+          <img src="${imgSrc}" alt="${imgAlt}">
+        </div>
+        <div class="popup__content">${tip}</div>
+      `;
+
+      document.body.appendChild(backdrop);
+      document.body.appendChild(popup);
+
+      const closePopup = () => {
+        popup.remove();
+        backdrop.remove();
+      };
+
+      backdrop.addEventListener("click", closePopup);
+      popup.querySelector(".popup__close").addEventListener("click", closePopup);
+    });
+  });
+})();
